@@ -11,7 +11,7 @@
 *-----------------------------------------------------------------
 * OPTIONS
 *-----------------------------------------------------------------
-.option TNOM=27 GMIN=1e-15
+.option TNOM=27 GMIN=1e-15 reltol=1e-4
 
 *-----------------------------------------------------------------
 * PARAMETERS
@@ -62,7 +62,7 @@ save @m.xdut.xm1.msky130_fd_pr__pfet_01v8[gm]
 
 optran 0 0 0 100p 2n 0
 
-dc VG 0 1.8 0.1
+dc VG 0 1.8 0.01
 
 let id = @m.xdut.xm1.msky130_fd_pr__pfet_01v8[id]
 let wl = (@m.xdut.xm1.msky130_fd_pr__pfet_01v8[w]/@m.xdut.xm1.msky130_fd_pr__pfet_01v8[l])

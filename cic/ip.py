@@ -41,19 +41,23 @@ for t in types:
     for c in contacts:
         cname = name.replace("{type}",t) \
                     .replace("{contacts}",str(c))
-        names.append(cname)
+        names.append(cname +"1F2")
 
         ss = cell.replace("{type}",t) \
                  .replace("{name}",cname) \
                  .replace("{count}",str(c-2))
+        names.append(cname +"5F0")
         cells.append(ss)
 
 N = len(cells)
+
+allnames = list()
 
 with open("../cic/cells","w") as fo:
     fo.write("CELLS = " + " ".join(names))
 
 with open("../cic/cells.json","w") as fo:
+
     fo.write(json.dumps(names))
 
 with open("../cic/alltran.json","w") as fo:

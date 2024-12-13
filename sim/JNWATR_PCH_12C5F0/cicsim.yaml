@@ -1,0 +1,6 @@
+corner:
+  Lay: ''
+  Sch: ''
+ngspice:
+  library: JNW_ATR_SKY130A
+  cell: JNWATR_PCH_12C5F0

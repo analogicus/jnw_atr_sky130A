@@ -57994,14 +57994,14 @@
         }
     ],
     "info": {
-        "arguments": "/Users/wulff/data/2023/aicex/ip/jnw_atr_sky130A/design/../../ciccreator/bin/darwin/cic.app/Contents/MacOS/cic ../cic/ip.json ../cic/sky130.tech JNW_ATR_SKY130A",
+        "arguments": "/Users/wulff/pro/aicex/ip/jnw_atr_sky130a/design/../../ciccreator/bin/darwin/cic.app/Contents/MacOS/cic ../cic/ip.json ../cic/sky130.tech JNW_ATR_SKY130A",
         "file": "../cic/ip.json",
-        "hash": "0.1.5-27-g9ab65a9",
+        "hash": "0.1.5-28-g73d31ad",
         "includepaths": "../cic",
         "libpaths": "",
         "library": "JNW_ATR_SKY130A",
         "prefix": "",
         "rules": "../cic/sky130.tech",
-        "version": "0.1.5+ built on Sun Aug 18 14:20:27 CEST 2024"
+        "version": "0.1.5+ built on Fri Dec 13 13:34:45 CET 2024"
     }
 }

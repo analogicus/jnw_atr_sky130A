@@ -21,7 +21,7 @@ author:
 description: >- # this means to ignore newlines until "baseurl:"
     A Transistor Library
 domain: "analogicus.github.io"
-baseurl: "/jnw_atr_sky130a" # the subpath of your site, e.g. /blog
+baseurl: "/jnw_atr_sky130A" # the subpath of your site, e.g. /blog
 url: "https://analogicus.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 

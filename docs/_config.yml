@@ -20,9 +20,9 @@ author:
 
 description: >- # this means to ignore newlines until "baseurl:"
     A Transistor Library
-domain: "wulffern.github.io"
+domain: "analogicus.github.io"
 baseurl: "/jnw_atr_sky130a" # the subpath of your site, e.g. /blog
-url: "https://wulffern.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://analogicus.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 
 show_excerpts: false

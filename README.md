@@ -1,38 +1,22 @@
 
-# JNW_ATR_SKY130A
 
-# Who
-wulff
+A standard transistor library
 
-# Why
- <explain why you made this module>
+The naming convention is NCH/PCH for NMOS and PMOS.
 
-# How
- <explain short how you made this module>
+The width is set by the number of contacts (2C)
 
+The length is a multiplum of minimum (1F2)
 
-# What
+So a transistor called NCH_4C1F2 is a NMOS with 4 contacts on drain/source
+and a 1.2x minimum gate length.
 
+![](media/JNWATR_NCH_2C1F2.svg)
 
-# Changelog/Plan
-| Version | Status | Comment|
-| :-| :-| :-|
-|0.1.0 | :x: | Make something |
+While a transistor called "PCH_2C1F2" is a PMOS with 2 contacts and 1.2x minimum
+gate length.
 
+![](media/JNWATR_NCH_2C5F0.svg)
 
-# Signal interface
-| Signal       | Direction | Domain  | Description                               |
-| :---         | :---:     | :---:   | :---                                      |
-| VDD_1V8         | Input     | VDD_1V8 | Main supply                               |
-| VSS         | Input     | Ground  |                                           |
-| PWRUP_1V8     | Input    | VDD_1V8 | Power up the circuit                       |
-
-
-# Key parameters
-| Parameter           | Min     | Typ           | Max     | Unit  |
-| :---                | :-:     | :-:           | :-:     | :---: |
-| Technology          |         | Skywater 130 nm |         |       |
-| AVDD                | 1.7    | 1.8           | 1.9    | V     |
-| Temperature         | -40     | 27            | 125     | C     |
 
 

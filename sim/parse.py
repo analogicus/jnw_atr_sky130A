@@ -16,7 +16,6 @@ etc = "/results/dc_Sch_etc.csv"
 dfs = list()
 for name in obj:
 
-
     dirname = prefix + "_" + name
     isPmos = not name.startswith(f"NCH")
 

@@ -15,6 +15,19 @@
               ]
           }
         },
+        { "name" : "PCH_2CTAP",
+          "inherit" : "PTAP",
+          "abstract" : 0,
+          "afterNew":{
+              "copyColumns": [
+                  {
+                      "count": 0,
+                      "offset": 9,
+                      "length": 1
+                  }
+              ]
+          }
+        },
         { "name" : "PCH_2C5F0",
           "inherit" : "PCH2",
           "abstract" : 0,
@@ -28,8 +41,32 @@
               ]
           }
         },
+        { "name" : "PCH_2CTOP",
+          "spice" : [
+            ".subckt PCH_2CTOP",
+            "xa1 PCH_2CTAP",
+            "xa2 D G S B PCH_2C1F2",
+            "xa3 D G S B PCH_2C5F0",
+            "xa4 PCH_2CTAP",
+            ".ends"
+        ]
+        }
+        ,
         { "name" : "PCH_4C1F2",
           "inherit" : "PCH",
+          "abstract" : 0,
+          "afterNew":{
+              "copyColumns": [
+                  {
+                      "count": 2,
+                      "offset": 9,
+                      "length": 1
+                  }
+              ]
+          }
+        },
+        { "name" : "PCH_4CTAP",
+          "inherit" : "PTAP",
           "abstract" : 0,
           "afterNew":{
               "copyColumns": [
@@ -54,8 +91,32 @@
               ]
           }
         },
+        { "name" : "PCH_4CTOP",
+          "spice" : [
+            ".subckt PCH_4CTOP",
+            "xa1 PCH_4CTAP",
+            "xa2 D G S B PCH_4C1F2",
+            "xa3 D G S B PCH_4C5F0",
+            "xa4 PCH_4CTAP",
+            ".ends"
+        ]
+        }
+        ,
         { "name" : "PCH_8C1F2",
           "inherit" : "PCH",
+          "abstract" : 0,
+          "afterNew":{
+              "copyColumns": [
+                  {
+                      "count": 6,
+                      "offset": 9,
+                      "length": 1
+                  }
+              ]
+          }
+        },
+        { "name" : "PCH_8CTAP",
+          "inherit" : "PTAP",
           "abstract" : 0,
           "afterNew":{
               "copyColumns": [
@@ -80,8 +141,32 @@
               ]
           }
         },
+        { "name" : "PCH_8CTOP",
+          "spice" : [
+            ".subckt PCH_8CTOP",
+            "xa1 PCH_8CTAP",
+            "xa2 D G S B PCH_8C1F2",
+            "xa3 D G S B PCH_8C5F0",
+            "xa4 PCH_8CTAP",
+            ".ends"
+        ]
+        }
+        ,
         { "name" : "PCH_12C1F2",
           "inherit" : "PCH",
+          "abstract" : 0,
+          "afterNew":{
+              "copyColumns": [
+                  {
+                      "count": 10,
+                      "offset": 9,
+                      "length": 1
+                  }
+              ]
+          }
+        },
+        { "name" : "PCH_12CTAP",
+          "inherit" : "PTAP",
           "abstract" : 0,
           "afterNew":{
               "copyColumns": [
@@ -106,8 +191,32 @@
               ]
           }
         },
+        { "name" : "PCH_12CTOP",
+          "spice" : [
+            ".subckt PCH_12CTOP",
+            "xa1 PCH_12CTAP",
+            "xa2 D G S B PCH_12C1F2",
+            "xa3 D G S B PCH_12C5F0",
+            "xa4 PCH_12CTAP",
+            ".ends"
+        ]
+        }
+        ,
         { "name" : "NCH_2C1F2",
           "inherit" : "NCH",
+          "abstract" : 0,
+          "afterNew":{
+              "copyColumns": [
+                  {
+                      "count": 0,
+                      "offset": 9,
+                      "length": 1
+                  }
+              ]
+          }
+        },
+        { "name" : "NCH_2CTAP",
+          "inherit" : "NTAP",
           "abstract" : 0,
           "afterNew":{
               "copyColumns": [
@@ -132,8 +241,32 @@
               ]
           }
         },
+        { "name" : "NCH_2CTOP",
+          "spice" : [
+            ".subckt NCH_2CTOP",
+            "xa1 NCH_2CTAP",
+            "xa2 D G S B NCH_2C1F2",
+            "xa3 D G S B NCH_2C5F0",
+            "xa4 NCH_2CTAP",
+            ".ends"
+        ]
+        }
+        ,
         { "name" : "NCH_4C1F2",
           "inherit" : "NCH",
+          "abstract" : 0,
+          "afterNew":{
+              "copyColumns": [
+                  {
+                      "count": 2,
+                      "offset": 9,
+                      "length": 1
+                  }
+              ]
+          }
+        },
+        { "name" : "NCH_4CTAP",
+          "inherit" : "NTAP",
           "abstract" : 0,
           "afterNew":{
               "copyColumns": [
@@ -158,8 +291,32 @@
               ]
           }
         },
+        { "name" : "NCH_4CTOP",
+          "spice" : [
+            ".subckt NCH_4CTOP",
+            "xa1 NCH_4CTAP",
+            "xa2 D G S B NCH_4C1F2",
+            "xa3 D G S B NCH_4C5F0",
+            "xa4 NCH_4CTAP",
+            ".ends"
+        ]
+        }
+        ,
         { "name" : "NCH_8C1F2",
           "inherit" : "NCH",
+          "abstract" : 0,
+          "afterNew":{
+              "copyColumns": [
+                  {
+                      "count": 6,
+                      "offset": 9,
+                      "length": 1
+                  }
+              ]
+          }
+        },
+        { "name" : "NCH_8CTAP",
+          "inherit" : "NTAP",
           "abstract" : 0,
           "afterNew":{
               "copyColumns": [
@@ -184,8 +341,32 @@
               ]
           }
         },
+        { "name" : "NCH_8CTOP",
+          "spice" : [
+            ".subckt NCH_8CTOP",
+            "xa1 NCH_8CTAP",
+            "xa2 D G S B NCH_8C1F2",
+            "xa3 D G S B NCH_8C5F0",
+            "xa4 NCH_8CTAP",
+            ".ends"
+        ]
+        }
+        ,
         { "name" : "NCH_12C1F2",
           "inherit" : "NCH",
+          "abstract" : 0,
+          "afterNew":{
+              "copyColumns": [
+                  {
+                      "count": 10,
+                      "offset": 9,
+                      "length": 1
+                  }
+              ]
+          }
+        },
+        { "name" : "NCH_12CTAP",
+          "inherit" : "NTAP",
           "abstract" : 0,
           "afterNew":{
               "copyColumns": [
@@ -209,6 +390,17 @@
                   }
               ]
           }
+        },
+        { "name" : "NCH_12CTOP",
+          "spice" : [
+            ".subckt NCH_12CTOP",
+            "xa1 NCH_12CTAP",
+            "xa2 D G S B NCH_12C1F2",
+            "xa3 D G S B NCH_12C5F0",
+            "xa4 NCH_12CTAP",
+            ".ends"
+        ]
         }
+        
    ]
 }

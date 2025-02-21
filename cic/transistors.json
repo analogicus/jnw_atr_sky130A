@@ -77,6 +77,93 @@
                        "-------------------------------------------------------"]
         },
 
+        { "name" : "PTAP" ,
+          "class" : "cIcCore::PatternTile",
+          "abstract" : 1,
+          "yoffset": -0.5,
+          "xoffset" : -1.5,
+          "widthoffset" : -2,
+          "fillCoordinatesFromStrings" : [
+              [   "NTAP",
+                  "xxx-------------xxx",
+                  "xxx-------------xxx",
+                  "xxxxxxxxxxxxxxxxxxx",
+                  "xxxxxxxxxxxxxxxxxxx",
+                  "xxxxxxxxxxxxxxxxxxx",
+                  "xxx-------------xxx",
+                  "xxx-------------xxx"
+
+              ],
+              [   "M1",
+                  "xxx-------------xxx",
+                  "xxx-------------xxx",
+                  "xxxxxxxxxxxxxxxxxxx",
+                  "xxxxxxxxxxxxxxxxxxx",
+                  "xxxxxxxxxxxxxxxxxxx",
+                  "xxx-------------xxx",
+                  "xxx-------------xxx"
+              ],
+              [   "NTAPC",
+                  "-------------------",
+                  "-------------------",
+                  "-x---------------x-",
+                  "-xxxxxxxxxxxxxxxxx-",
+                  "-x---------------x-",
+                  "-------------------",
+                  "-------------------"
+              ]
+          ],
+          "beforePlace" :{
+              "addEnclosuresByRectangle" : [
+                  ["PDIFF",["self"],["NWT"]]
+              ]
+          }
+
+        },
+        { "name" : "NTAP" ,
+          "class" : "cIcCore::PatternTile",
+          "abstract" : 1,
+          "yoffset": -0.5,
+          "xoffset" : -1.5,
+          "widthoffset" : -2,
+          "fillCoordinatesFromStrings" : [
+              [   "PTAP",
+                  "xxx-------------xxx",
+                  "xxx-------------xxx",
+                  "xxxxxxxxxxxxxxxxxxx",
+                  "xxxxxxxxxxxxxxxxxxx",
+                  "xxxxxxxxxxxxxxxxxxx",
+                  "xxx-------------xxx",
+                  "xxx-------------xxx"
+
+              ],
+              [   "M1",
+                  "xxx-------------xxx",
+                  "xxx-------------xxx",
+                  "xxxxxxxxxxxxxxxxxxx",
+                  "xxxxxxxxxxxxxxxxxxx",
+                  "xxxxxxxxxxxxxxxxxxx",
+                  "xxx-------------xxx",
+                  "xxx-------------xxx"
+              ],
+              [   "PTAPC",
+                  "-------------------",
+                  "-------------------",
+                  "-x---------------x-",
+                  "-xxxxxxxxxxxxxxxxx-",
+                  "-x---------------x-",
+                  "-------------------",
+                  "-------------------"
+              ]
+          ],
+          "beforePlace" :{
+              "addEnclosuresByRectangle" : [
+                  ["NDIFF",["self"],["PWT"]]
+              ]
+          }
+        },
+
+
         { "name" : "BULKP" ,
           "class" : "Gds::GdsPatternTransistor",
           "abstract" : 1,
@@ -230,6 +317,8 @@
               ]
           ]
         },
+
+
         { "name" : "BULKP2" ,
           "class" : "Gds::GdsPatternTransistor",
           "abstract" : 1,

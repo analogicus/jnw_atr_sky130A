@@ -17,6 +17,19 @@ cell = """
               ]
           }
         },
+        { "name" : "{name}TAP",
+          "inherit" : "{type}TAP",
+          "abstract" : 0,
+          "afterNew":{
+              "copyColumns": [
+                  {
+                      "count": {count},
+                      "offset": 9,
+                      "length": 1
+                  }
+              ]
+          }
+        },
         { "name" : "{name}5F0",
           "inherit" : "{type}CH2",
           "abstract" : 0,
@@ -29,7 +42,18 @@ cell = """
                   }
               ]
           }
-        }"""
+        },
+        { "name" : "{name}TOP",
+          "spice" : [
+            ".subckt {name}TOP",
+            "xa1 {name}TAP",
+            "xa2 D G S B {name}1F2",
+            "xa3 D G S B {name}5F0",
+            "xa4 {name}TAP",
+            ".ends"
+        ]
+        }
+        """
 
 types = ["P","N"]
 contacts = [2,4,8,12]
@@ -52,6 +76,8 @@ for t in types:
 N = len(cells)
 
 allnames = list()
+
+
 
 with open("../cic/cells","w") as fo:
     fo.write("CELLS = " + " ".join(names))

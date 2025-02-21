@@ -1,0 +1,22 @@
+magic
+tech sky130A
+magscale 1 1
+timestamp 1740092400
+<< checkpaint >>
+rect 0 0 832 1280
+use JNWATR_NCH_12CTAP xa1 
+transform 1 0 0 0 1 0
+box 0 0 832 240
+use JNWATR_NCH_12C1F2 xa2 
+transform 1 0 0 0 1 240
+box 0 240 832 640
+use JNWATR_NCH_12C5F0 xa3 
+transform 1 0 0 0 1 640
+box 0 640 832 1040
+use JNWATR_NCH_12CTAP xa4 
+transform 1 0 0 0 1 1040
+box 0 1040 832 1280
+<< labels >>
+<< properties >>
+string FIXED_BBOX 0 0 832 1280
+<< end >>

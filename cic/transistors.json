@@ -77,7 +77,47 @@
                        "-------------------------------------------------------"]
         },
 
-        { "name" : "PTAP" ,
+        { "name" : "PTAPTOP" ,
+          "class" : "cIcCore::PatternTile",
+          "abstract" : 1,
+          "yoffset": -0.5,
+          "xoffset" : -1.5,
+          "widthoffset" : -2,
+          "fillCoordinatesFromStrings" : [
+              [   "NTAP",
+                  "-------------------",
+                  "xxxxxxxxxxxxxxxxxxx",
+                  "xxxxxxxxxxxxxxxxxxx",
+                  "xxxxxxxxxxxxxxxxxxx",
+                  "xxx-------------xxx",
+                  "xxx-------------xxx"
+
+              ],
+              [   "M1",
+                  "-------------------",
+                  "xxxxxxxxxxxxxxxxxxx",
+                  "xxxxxxxxxxxxxxxxxxx",
+                  "xxxxxxxxxxxxxxxxxxx",
+                  "xxx-------------xxx",
+                  "xxx-------------xxx"
+              ],
+              [   "NTAPC",
+                  "-------------------",
+                  "-------------------",
+                  "----xxxxxxxxxxx----",
+                  "-------------------",
+                  "-------------------",
+                  "-------------------"
+              ]
+          ],
+          "beforePlace" :{
+              "addEnclosuresByRectangle" : [
+                  ["PDIFF",["self"],["NWT"]]
+              ]
+          }
+
+        },
+        { "name" : "PTAPBOT" ,
           "class" : "cIcCore::PatternTile",
           "abstract" : 1,
           "yoffset": -0.5,
@@ -90,8 +130,8 @@
                   "xxxxxxxxxxxxxxxxxxx",
                   "xxxxxxxxxxxxxxxxxxx",
                   "xxxxxxxxxxxxxxxxxxx",
-                  "xxx-------------xxx",
-                  "xxx-------------xxx"
+                  "-------------------"
+
 
               ],
               [   "M1",
@@ -100,15 +140,14 @@
                   "xxxxxxxxxxxxxxxxxxx",
                   "xxxxxxxxxxxxxxxxxxx",
                   "xxxxxxxxxxxxxxxxxxx",
-                  "xxx-------------xxx",
-                  "xxx-------------xxx"
+                  "-------------------"
+
               ],
               [   "NTAPC",
                   "-------------------",
                   "-------------------",
-                  "-x---------------x-",
-                  "-xxxxxxxxxxxxxxxxx-",
-                  "-x---------------x-",
+                  "-------------------",
+                  "----xxxxxxxxxx-----",
                   "-------------------",
                   "-------------------"
               ]
@@ -120,7 +159,46 @@
           }
 
         },
-        { "name" : "NTAP" ,
+        { "name" : "NTAPTOP" ,
+          "class" : "cIcCore::PatternTile",
+          "abstract" : 1,
+          "yoffset": -0.5,
+          "xoffset" : -1.5,
+          "widthoffset" : -2,
+          "fillCoordinatesFromStrings" : [
+              [   "PTAP",
+                  "-------------------",
+                  "xxxxxxxxxxxxxxxxxxx",
+                  "xxxxxxxxxxxxxxxxxxx",
+                  "xxxxxxxxxxxxxxxxxxx",
+                  "xxx-------------xxx",
+                  "xxx-------------xxx"
+
+              ],
+              [   "M1",
+                  "-------------------",
+                  "xxxxxxxxxxxxxxxxxxx",
+                  "xxxxxxxxxxxxxxxxxxx",
+                  "xxxxxxxxxxxxxxxxxxx",
+                  "xxx-------------xxx",
+                  "xxx-------------xxx"
+              ],
+              [   "PTAPC",
+                  "-------------------",
+                  "-------------------",
+                  "----xxxxxxxxxxx----",
+                  "-------------------",
+                  "-------------------",
+                  "-------------------"
+              ]
+          ],
+          "beforePlace" :{
+              "addEnclosuresByRectangle" : [
+                  ["NDIFF",["self"],["PWT"]]
+              ]
+          }
+        },
+        { "name" : "NTAPBOT" ,
           "class" : "cIcCore::PatternTile",
           "abstract" : 1,
           "yoffset": -0.5,
@@ -133,8 +211,8 @@
                   "xxxxxxxxxxxxxxxxxxx",
                   "xxxxxxxxxxxxxxxxxxx",
                   "xxxxxxxxxxxxxxxxxxx",
-                  "xxx-------------xxx",
-                  "xxx-------------xxx"
+                  "-------------------"
+
 
               ],
               [   "M1",
@@ -143,18 +221,18 @@
                   "xxxxxxxxxxxxxxxxxxx",
                   "xxxxxxxxxxxxxxxxxxx",
                   "xxxxxxxxxxxxxxxxxxx",
-                  "xxx-------------xxx",
-                  "xxx-------------xxx"
+                  "-------------------"
+
               ],
               [   "PTAPC",
                   "-------------------",
                   "-------------------",
-                  "-x---------------x-",
-                  "-xxxxxxxxxxxxxxxxx-",
-                  "-x---------------x-",
+                  "-------------------",
+                  "----xxxxxxxxxx-----",
                   "-------------------",
                   "-------------------"
               ]
+
           ],
           "beforePlace" :{
               "addEnclosuresByRectangle" : [

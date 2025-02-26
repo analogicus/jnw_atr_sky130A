@@ -1,0 +1,30 @@
+magic
+tech sky130A
+magscale 1 1
+timestamp 1740524400
+<< checkpaint >>
+rect 0 0 832 200
+<< ntap >>
+rect -48 20 880 60
+rect -48 60 880 100
+rect -48 100 880 140
+rect -48 140 48 180
+rect 784 140 880 180
+rect -48 180 48 220
+rect 784 180 880 220
+<< locali >>
+rect -48 20 880 60
+rect -48 60 880 100
+rect -48 100 880 140
+rect -48 140 48 180
+rect 784 140 880 180
+rect -48 180 48 220
+rect 784 180 880 220
+<< ntapc >>
+rect 80 60 720 100
+<< nwell >>
+rect -92 -64 924 264
+<< labels >>
+<< properties >>
+string FIXED_BBOX 0 0 832 200
+<< end >>

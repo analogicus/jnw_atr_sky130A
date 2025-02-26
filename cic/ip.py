@@ -17,8 +17,21 @@ cell = """
               ]
           }
         },
-        { "name" : "{name}TAP",
-          "inherit" : "{type}TAP",
+        { "name" : "{name}TAPTOP",
+          "inherit" : "{type}TAPTOP",
+          "abstract" : 0,
+          "afterNew":{
+              "copyColumns": [
+                  {
+                      "count": {count},
+                      "offset": 9,
+                      "length": 1
+                  }
+              ]
+          }
+        },
+        { "name" : "{name}TAPBOT",
+          "inherit" : "{type}TAPBOT",
           "abstract" : 0,
           "afterNew":{
               "copyColumns": [
@@ -46,10 +59,14 @@ cell = """
         { "name" : "{name}TOP",
           "spice" : [
             ".subckt {name}TOP",
-            "xa1 {name}TAP",
-            "xa2 D G S B {name}1F2",
-            "xa3 D G S B {name}5F0",
-            "xa4 {name}TAP",
+            "xa1 {name}TAPBOT",
+            "xa2 D2 G2 S2 B {name}1F2",
+            "xa3 D3 G3 S3 B {name}5F0",
+            "xa4 {name}TAPTOP",
+            "xb1 {name}TAPBOT",
+            "xb2 D4 G4 S4 B {name}1F2",
+            "xb3 D5 G5 S5 B {name}5F0",
+            "xb4 {name}TAPTOP",
             ".ends"
         ]
         }
